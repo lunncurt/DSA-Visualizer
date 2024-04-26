@@ -1,2 +1,2 @@
 # DSA-Visualizer
-Visualize Data Structures and Algorithms using C++ and SFML
+Visualize Data Structures and Algorithms using C++, SFML, and CMake
