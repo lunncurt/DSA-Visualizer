@@ -1,4 +1,3 @@
-#include "SFML/Graphics/RectangleShape.hpp"
 #include "SFML/Graphics/RenderWindow.hpp"
 #include <SFML/Graphics.hpp>
 #include "algorithms/sorting.hpp"
@@ -19,9 +18,9 @@ int main() {
 
     window.clear(sf::Color::Black);
 
-    std::vector<sf::RectangleShape> s = populate(window); 
+    std::vector<int> numbers = populate(window); 
 
-    window.display();
+    insertion(window, numbers);
   }
   return 0;
 }
