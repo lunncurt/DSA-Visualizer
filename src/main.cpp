@@ -6,9 +6,6 @@
 int main() {
   sf::RenderWindow window(sf::VideoMode(1920, 1080), "DSA Visuals");
 
-  int x = 910;
-  int y = 910;
-
   while (window.isOpen()) {
     sf::Event event;
     while (window.pollEvent(event)) {
@@ -18,9 +15,11 @@ int main() {
 
     window.clear(sf::Color::Black);
 
-    std::vector<int> numbers = populate(window); 
+    std::vector<int> numbers = populate(window);
 
     insertion(window, numbers);
+
+
   }
   return 0;
 }

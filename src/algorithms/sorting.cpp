@@ -52,7 +52,7 @@ std::vector<int> populate(sf::RenderWindow &window) {
   return vals;
 }
 
-void insertion(sf::RenderWindow &window, std::vector<int> &vals) {
+void insertion(sf::RenderWindow &window, std::vector<int> vals) {
   for (int i = 1; i < vals.size(); i++) {
     int j = i - 1;
     while (j >= 0 && vals[j + 1] < vals[j]) {
@@ -66,4 +66,8 @@ void insertion(sf::RenderWindow &window, std::vector<int> &vals) {
     }
   }
   sf::sleep(sf::milliseconds(5000));
+}
+
+void merge(sf::RenderWindow &window, std::vector<int> vals){
+  
 }
