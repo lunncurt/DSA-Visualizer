@@ -1,10 +1,12 @@
 #include "SFML/Graphics/RenderWindow.hpp"
-#include <SFML/Graphics.hpp>
 #include "algorithms/sorting.hpp"
+#include <SFML/Graphics.hpp>
 #include <vector>
 
 int main() {
   sf::RenderWindow window(sf::VideoMode(1920, 1080), "DSA Visuals");
+
+  std::vector<int> numbers = populate(window);
 
   while (window.isOpen()) {
     sf::Event event;
@@ -15,11 +17,7 @@ int main() {
 
     window.clear(sf::Color::Black);
 
-    std::vector<int> numbers = populate(window);
-
     insertion(window, numbers);
-
-
   }
   return 0;
 }
